@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Todo</title>
+  <title>Lancaster CoderDojo</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<%= yield %>
+  <header>
+  <%= nav_bar :fixed => :top, :brand => "Lancaster CoderDojo", :responsive => true do %>
+    <%= menu_group do %>
+      <%= menu_item "Home", root_path %>
+      <%= menu_item "About", about_path %>
+    <% end %>
+  <% end %>
 
+  </header>
+  <div class="container">
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <%= yield %>
+  </div>
+  <hr>
+  <footer>
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
