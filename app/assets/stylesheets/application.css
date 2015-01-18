@@ -22,3 +22,11 @@
   padding-top: 25px;
   font-size: 7em;
 }
+
+.lessons img {
+  border: 1px solid black;
+}
+
+.lessons li {
+  margin: 20px;
+}

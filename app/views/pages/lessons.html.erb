@@ -3,34 +3,14 @@
     <div class="col-lg-12">
       <h1>Lessons</h1>
 
-      <h2>Beginner/Games</h2>
-      <ul>
-        <li><a href="http://lightbot.com/">Lightbot</a></li>
-        <li><a href="http://scratch.mit.edu/">Scratch</a></li>
-        <li><a href="http://codecombat.com/">Code Combat</a></li>
-        <li><a href="http://www.codeavengers.com/">Code Avengers</a></li>
-      </ul>
-
-      <h2>Learn Web Development</h2>
-      <ul>
-        <li><a href="https://dash.generalassemb.ly/projects/annas-website-1">Dash</a></li>
-        <li><a href="http://www.codecademy.com/en/skills/make-a-website/resume">Code Academy</a></li>
-        <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Academy</a></li>
-      </ul>
-
-      <h2>Learn a Programming Language</h2>
-      <ul>
-        <li>Ruby</li>
-        <ul>
-          <li><a href="http://tryruby.org/">Try Ruby</a></li>
-          <li><a href="http://www.codecademy.com/en/tracks/ruby">Code Academy</a></li>
+      <% @lessons.each do |lesson| %>
+        <h2><%= lesson[:title] %></h2>
+        <ul class="lessons list-inline">
+        <% lesson[:sites].each do |site| %>
+          <li class="text-center lead"><a href="<%= site[:url] %>"><%= image_tag site[:image] %><br/><%= site[:name] %></a></li>
+        <% end %>
         </ul>
-        <li>Javascript</li>
-        <ul>
-          <li><a href="http://www.codecademy.com/en/tracks/javascript">Code Academy</a></li>
-          <li><a href="https://www.khanacademy.org/computing/computer-programming/programming">Khan Academy</a></li>
-        </ul>
-      </ul>
+      <% end %>
     </div>
   </div>
 </div>
