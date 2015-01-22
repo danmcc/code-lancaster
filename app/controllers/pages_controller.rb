@@ -11,7 +11,7 @@ class PagesController < ApplicationController
 
   def lessons
     @lessons = [
-      { title: 'Beginner/Games',
+      { title: 'Getting Started',
         sites: [
           { name: 'Lightbot', url: 'http://lightbot.com/hocflash.html', image: 'lightbot.png' },
           { name: 'Scratch', url: 'http://scratch.mit.edu/', image: 'scratch.png' },
