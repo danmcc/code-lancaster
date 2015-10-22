@@ -16,7 +16,6 @@ class PagesController < ApplicationController
           { name: 'Lightbot', url: 'http://lightbot.com/hocflash.html', image: 'lightbot.png' },
           { name: 'Scratch', url: 'http://scratch.mit.edu/', image: 'scratch.png' },
           { name: 'Code Combat', url: 'http://codecombat.com/', image: 'codecombat.png' },
-          { name: 'Code Kingdoms', url: 'http://codekingdoms.com/', image: 'codekingdoms.png' },
           { name: 'Blockly Games', url: 'https://blockly-games.appspot.com/', image: 'blockly.png' },
         ]
       },
