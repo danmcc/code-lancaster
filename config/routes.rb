@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'about' => 'pages#about'
   get 'lessons' => 'pages#lessons'
+  get 'belts' => 'pages#belts'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

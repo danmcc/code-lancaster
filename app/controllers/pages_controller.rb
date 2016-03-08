@@ -37,4 +37,6 @@ class PagesController < ApplicationController
     ]
   end
 
+  def belts
+  end
 end
