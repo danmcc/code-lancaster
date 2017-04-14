@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'about' => 'pages#about'
   get 'lessons' => 'pages#lessons'
   get 'belts' => 'pages#belts'
+  get 'planes' => 'pages#planes'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
