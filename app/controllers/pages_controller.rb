@@ -13,7 +13,7 @@ class PagesController < ApplicationController
     @lessons = [
       { title: 'Getting Started',
         sites: [
-          { name: 'Lightbot', url: 'http://lightbot.com/hocflash.html', image: 'lightbot.png' },
+          { name: 'Lightbot', url: 'http://lightbot.com/flash.html', image: 'lightbot.png' },
           { name: 'Scratch', url: 'http://scratch.mit.edu/', image: 'scratch.png' },
           { name: 'Code Combat', url: 'http://codecombat.com/', image: 'codecombat.png' },
           { name: 'Blockly Games', url: 'https://blockly-games.appspot.com/', image: 'blockly.png' },
