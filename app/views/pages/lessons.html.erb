@@ -13,7 +13,7 @@
         <h2><%= lesson[:title] %></h2>
         <ul class="lessons list-inline">
         <% lesson[:sites].each do |site| %>
-          <li class="text-center lead"><a href="<%= site[:url] %>"><%= image_tag site[:image] %><br/><%= site[:name] %></a></li>
+          <li class="text-center lead"><a href="<%= site[:url] %>"><%= image_tag site[:image], width: 220 %><br/><%= site[:name] %></a></li>
         <% end %>
         </ul>
       <% end %>
